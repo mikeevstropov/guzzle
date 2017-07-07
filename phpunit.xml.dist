@@ -1,0 +1,6 @@
+<phpunit>
+    <php>
+        <env name="url_200" value="http://httpstat.us/200"/>
+        <env name="url_503" value="http://httpstat.us/503"/>
+    </php>
+</phpunit>

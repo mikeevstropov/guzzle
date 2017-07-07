@@ -1,0 +1,32 @@
+{
+    "name": "mikeevstropov/guzzle",
+    "description": "Retrying behavior for Guzzle and easy logger injection",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Evstropov",
+            "email": "mike.evstropov@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "webmozart/assert": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mikeevstropov\\Guzzle\\": ["src", "tests"]
+        }
+    },
+    "scripts": {
+        "test": "phpunit tests --bootstrap vendor/autoload.php",
+        "post-install-cmd": [
+            "mkdir var var/logs",
+            "cp phpunit.xml.dist phpunit.xml"
+        ]
+    }
+}
