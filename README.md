@@ -32,7 +32,7 @@ $ composer require mikeevstropov/guzzle
   
   Default:
   
-  - `array(0, 5)` - repeat failed request or response code 5xx
+  - `array(0, 5)` - repeat failed request or if response code is 5xx
   
   _List of error codes for retrying requests:_
   
