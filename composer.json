@@ -1,6 +1,6 @@
 {
     "name": "mikeevstropov/guzzle",
-    "description": "Retrying behavior for Guzzle and easy logger injection",
+    "description": "Retrying behavior for Guzzle",
     "type": "library",
     "license": "MIT",
     "authors": [
